@@ -44,7 +44,14 @@
 				<string>osdev1.fptosxcloud.com</string>
             </array>
         </config-file>
-        
+		
+        <key>NSAppTransportSecurity</key>
+		<dict>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+		<key>NSAllowsArbitraryLoadsForMedia</key>
+		<true/>
+		</dict>
         
         
     </platform>
