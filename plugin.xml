@@ -52,7 +52,17 @@
 		<key>NSAllowsArbitraryLoadsForMedia</key>
 		<true/>
 		</dict>
-        
+	    
+        <!-- For Japanese UI of camera, keyboard and etc.. -->
+        <config-file target="*-Info.plist" platform="ios" parent="CFBundleDevelopmentRegion" overwrite="true">
+            <string>ja-JP</string>
+        </config-file>
+        <config-file target="*-Info.plist" platform="ios" parent="CFBundleLocalizations" overwrite="true">
+            <array>
+                <string>ja</string>
+            </array>
+        </config-file>
+	    
        	<preference name="AllowsInlineMediaPlayback" value="true">
     </platform>
     
